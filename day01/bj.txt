@@ -1,0 +1,13 @@
+openMP 支持Fortran、c/c++的API
+由一组编译指导、运行时库
+OpenMP采用fork-join并行执行方式
+#pragma omp parallel private(var1,var2) shared(var3)
+支持数据的共享和私有化
+支持并行区域、工作共享、同步等。
+编译制导由下列几部分组成
+	制导标志符（#pragma omp）
+	制导名称（parallel，for,section）
+	子句（private,shared,reduction,copyin）
+reduction 子句，规约用来从相关的操作（+，*，max和min）中产生一个单一值
+
+
